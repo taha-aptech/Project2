@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Viruses</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    background-color: #e9ecef; /* Light gray background for better readability */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+h1, h2 {
+    color: #343a40; /* Dark color for headings */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+h1:hover, h2:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.navbar {
+    transition: background-color 0.5s ease; /* Smooth transition for navbar background */
+}
+
+.navbar:hover {
+    background-color: #f8f9fa; /* Change navbar background on hover */
+}
+
+.nav-link {
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+footer {
+    background-color: #f8f9fa; /* Light footer background */
+    padding: 10px 0; /* Padding for footer */
+    transition: background-color 0.5s ease; /* Smooth transition for footer background */
+}
+
+footer:hover {
+    background-color: #e2e6ea; /* Change footer background on hover */
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Virus Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container mt-5 fade-in">
+        <h1 class="text-center">About Viruses</h1>
+        <p class="lead text-center">Understanding the world of viruses and their impact on health.</p>
+        
+        <div class="row mt-4">
+            <div class="col-md-6 fade-in">
+                <h2>What are Viruses?</h2>
+                <p>Viruses are microscopic infectious agents that can only replicate inside the living cells of an organism. They are composed of genetic material (DNA or RNA) surrounded by a protein coat and, in some cases, a lipid envelope.</p>
+            </div>
+            <div class="col-md-6 fade-in">
+                <h2>How do Viruses Spread?</h2>
+                <p>Viruses can spread through various means, including direct contact, airborne transmission, and contaminated surfaces. Understanding these transmission methods is crucial for prevention and control.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 fade-in">
+                <h2>Impact on Health</h2>
+                <p>Viruses can cause a range of diseases, from mild illnesses like the common cold to severe diseases such as HIV/AIDS and COVID-19. Vaccination and hygiene practices are essential in controlling viral infections.</p>
+            </div>
+            <div class="col-md-6 fade-in">
+                <h2>Prevention and Control</h2>
+                <p>Preventive measures include vaccination, hand hygiene, and avoiding close contact with infected individuals. Public health initiatives play a vital role in controlling outbreaks.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2023 Virus Info. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Link to custom JavaScript -->
+
+    <script>
+        $(document).ready(function() {
+    // Add the 'visible' class to elements with the 'fade-in' class when the page loads
+    $('.fade-in').each(function() {
+        $(this).addClass('visible');
+    });
+});
+    </script>
+</body>
+</html>

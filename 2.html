@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootsrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Icon Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!--Jquery Link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+
+/Sapfety Tips styling/
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes bounce {
+            0%, 100% {
+                transform: translateY(0); /* Starting and ending position */
+            }
+            50% {
+                transform: translateY(-10px); /* Move up */
+            }
+        }
+
+       /header/
+    .container-fluid{
+       background: linear-gradient(to right,rgb(172, 72, 72),rgb(13, 58, 110));
+        padding: 5px;
+        padding: 55px;
+    }
+    .cholera{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 3px 5px #000; 
+      color: #fff; 
+      animation: bounce 2s infinite;
+      margin-top: -15px;
+      font-size: 50px;
+    }
+    .icon{
+        margin-top: -15px;
+        font-size: 27px;
+        color: black;
+        padding: 5px;
+        text-shadow: 3px 3px 5px #000; 
+      color: #fff; 
+      animation: bounce 2s infinite;
+    }
+    .img1{
+        border-radius: 30px;
+        width: 900px;
+        margin-top: -50px;
+        box-shadow: 4px 6px 5px ,rgb(11, 67, 100);
+    }
+    .para{
+        width: 900px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-top: -20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: whitesmoke;
+        box-shadow: 3px 4px 5px gray;
+        padding: 50px;
+    }
+   body{
+    background-color: #ebebeb;
+   }
+ 
+
+/Tbale styling/
+   table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 35px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+.img3{
+  width: 800px;
+ margin-top: 40px;
+ border-radius: 20px;
+ border: 1px solid;
+ border-width: 17px;
+ border-color: rgb(11, 29, 107);
+}
+
+/Questions About Cholera/
+.two,.four,.six,.eight,.ten,.twelve{
+  display: none;
+  border: 1px solid;
+  margin-left: 140px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 1000px;
+  padding: 8px;
+  color: black;
+  background: linear-gradient(to right,gainsboro,rgb(231, 156, 156));
+}
+.one,.three,.five,.seven,.nine,.eleven{
+  border: 1px solid;
+  margin: 15px;
+  color: black;
+  width: 1000px;
+  padding: 12px;
+ background: linear-gradient(to right,rgba(172, 72, 72, 0.603),rgba(13, 58, 110, 0.644));
+  margin-left: 140px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 8px;
+}
+.container4{
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+}
+
+/Footer styling/
+.container1{
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 17px;
+        }
+        .email{
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+        .para1{
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: goldenrod;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: rgb(148, 31, 31);
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   a{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+   }
+   .container{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+  backdrop-filter: blur(62px);
+   }
+
+   .text-centre{
+    font-size: 25px !important;
+    font-weight: bold !important;
+   }
+
+   .safety{
+    font-size: 40px;
+    font-weight: bold;
+   }
+   
+</style>
+
+</head>
+<body>
+
+  <!--Body-->
+    <div class="work">
+
+      <!--Bootsrtap link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!--Header-->    
+    <center><div class="container-fluid">
+        <h1 class="cholera">Cholera</h1>
+        <a href="https://www.facebook.com/"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="https://x.com/?lang=en"><span  class="icon"><i class="fa-brands fa-twitter"></i></span></a>
+        <a href="https://www.youtube.com/"><span  class="icon"><i class="fa-brands fa-youtube"></i></span></a>
+        <a href="https://www.messenger.com/"><span  class="icon"><i class="fa-brands fa-facebook-messenger"></i></span></a>
+        <a href="https://www.intercom.com/"><span  class="icon"><i class="fa-brands fa-intercom"></i></span></a>
+    </div></center>
+
+    <!--image-->
+  <center><div class="container2">
+ <img class="img1" src="https://i.pinimg.com/736x/91/01/cd/9101cda9f3777b7ef18c3d7925a69e08.jpg" alt="">
+
+     <!--paragraph information-->  
+    <p class="para">
+        Cholera is an acute diarrhoeal infection that can kill within hours, if left untreated. Cholera remains a global public health threat, causing between 1.3 million to 4.0 million cases, and 21,000 and 143,000 deaths worldwide every year. It is caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae. <br>
+
+        Symptoms appear 12 hours to five days after ingesting contaminated food or water, and it can kill within hours if untreated. The signs and symptoms include rice water stools, fishy odour stools, vomiting, rapid heart rate, loss of skin elasticity, dry mouth, low blood pressure, dehydration, muscle cramps, restlessness or irritations especially in children, sleepiness or tiredness. However, some infected people may not show any symptoms. <br>
+        
+        Prevention and control can be achieved by consuming clean water and food, and by providing proper hygiene conditions and access to basic services. Adopting basic hygienic behaviours such as regular handwashing with soap after defecation and before handling food or eating, and safe preparation and conservation of food are essential. Vaccination with Oral Cholera Vaccines (OCV) has proved effective in cholera control. The primary treatment for cholera is the use of oral rehydration salts (ORS) and the use of antibiotics. <br> </p>
+    </div></center>
+
+      <!--heading + alert-->
+    <div class="alert alert-danger" role="alert" style="text-align: center;  background: linear-gradient(to right,rgb(172, 72, 72),rgb(13, 58, 110)); color: white; font-weight: bold; font-size: 35px !important;">
+      <h3>CHOLERA INFORMATION</h3>
+    </div>
+
+            <!--Table-->
+        <center>
+            <table class="table table-bordered" style="width: 80%; margin-top: 20px;">
+              <thead class="table-dark">
+                <tr>
+                  <th>Aspect</th>
+                  <th>Information</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>What is Cholera?</strong></td>
+                  <td>A bacterial disease that causes severe diarrhea and dehydration.</td>
+                </tr>
+                <tr>
+                  <td><strong>First Outbreak</strong></td>
+                  <td>Cholera was first recorded in 1817 in India.</td>
+                </tr>
+                <tr>
+                  <td><strong>Symptoms</strong></td>
+                  <td>Diarrhea, vomiting, dehydration, muscle cramps, low blood pressure, dry mouth, and sunken eyes.</td>
+                </tr>
+                <tr>
+                  <td><strong>Diagnosis</strong></td>
+                  <td>Cholera is diagnosed through a stool sample, which is tested for Vibrio cholerae bacteria.</td>
+                </tr>
+                <tr>
+                  <td><strong>Treatment</strong></td>
+                  <td>The primary treatment is oral rehydration solution (ORS), with antibiotics used in severe cases.</td>
+                </tr>
+                <tr>
+                  <td><strong>Prevention</strong></td>
+                  <td>Ensuring access to clean water and sanitation, proper hygiene practices, and vaccination.</td>
+                </tr>
+                <tr>
+                  <td><strong>Vaccine</strong></td>
+                  <td>Oral Cholera Vaccines (OCV) are available and provide short-term protection against cholera.</td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+
+          <!--Video-->
+     <center><video class="img3" src="https://www.shutterstock.com/shutterstock/videos/1047490078/preview/stock-footage-warped-celled-virus-structure-in-neon-light.webm" controls></video></center>
+    
+          
+       <!--Queastions about cholera-->
+      <center></center>  <div class="container4">
+            <div class="one">Who Discovered Cholera?</div>
+            <div class="two">The First Discovery: Filippo Pacini, 1854 <br>
+              In 1854, the year of the notorious cholera outbreak in London investigated by John Snow, the disease also struck mainland Europe. Italy was not spared, and cholera outbreaks occurred in several cities and towns of the peninsula.</div>
+
+            <div class="three">Is Cholera Bacterial or Viral?</div>
+            <div class="four">Cholera is a bacterial disease spread through contaminated water and food. Cholera can cause severe diarrhea, dehydration, and even death if the disease goes untreated. People living in places with unsafe drinking water </div>
+            
+            <div class="five">What are the Symptoms?</div>
+            <div class="six"> Symptoms include diarrhea, vomiting, leg cramps, fever, and drowsiness. </div>
+
+            <div  class="seven">When is cholera most likely to occur?</div>
+            <div class="eight"> Cholera outbreaks are more likely to occur in areas with poor water, sanitation, and hygiene. They can also occur after natural disasters like hurricanes or earthquakes.  </div>
+
+            <div  class="nine">Who is at risk?</div>
+            <div class="ten">People who don't have access to clean water or sanitation are at the highest risk of getting cholera. </div>
+
+            <div  class="eleven">What is the most Interesting Fact About Cholera?</div>
+            <div class="twelve">Key facts. Cholera is a severe diarrheal disease that can be fatal within hours if not treated. Quick access to treatment is crucial. Researchers estimate that there are 1.3 to 4.0 million cases and 21 000 to 143 000 deaths from cholera worldwide each year (1). </div>
+         </div></center>
+
+          <!--Togle function-->
+         <script>
+           $(document).ready(function(){
+            $('.one').click(function(){
+              $('.two').slideToggle('slow');
+            });
+
+
+            $('.three').click(function(){
+              $('.four').slideToggle('slow');
+            });
+
+            $('.five').click(function(){
+              $('.six').slideToggle('slow');
+            });
+
+            $('.seven').click(function(){
+              $('.eight').slideToggle('slow');
+            });
+
+            $('.nine').click(function(){
+              $('.ten').slideToggle('slow');
+            });
+
+            $('.eleven').click(function(){
+              $('.twelve').slideToggle('slow');
+            });
+
+           });
+         </script>
+
+
+          <!-- Safety Tips Section -->
+    <section id="safety-tips" class="mb-5">
+      <h2 class="text-center text-secondary mb-4 safety">Safety Tips</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Drink Safe Water</h5>
+              <p class="card-text">Use boiled, filtered, or bottled water for drinking and cooking. Avoid untreated water.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Practice Good Hygiene</h5>
+              <p class="card-text">Wash hands with soap and clean water before eating, cooking, and after using the toilet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body"

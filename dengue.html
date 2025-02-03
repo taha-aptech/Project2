@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viruses</title>
+    <link rel="icon" href="logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        /* Bounce animation for text and icons */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Background styling for the main container */
+        .container-fluid {
+          background:linear-gradient(to right,rgb(254, 254, 165),maroon,maroon,rgb(253, 253, 149));
+        padding: 5px;
+        padding: 55px;
+        }
+
+        /* Styling for animated text */
+        .dengue {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-shadow: 3px 3px 5px #986969;
+            color: #fff;
+            animation: bounce 2s infinite;
+            margin-top: -15px;
+            text-shadow: 3px 3px 4px black;
+        }
+
+        /* Styling for animated icons */
+        .icon {
+            font-size: 27px;
+            color: black;
+            text-shadow: 3px 3px 5px #000;
+            color: #fff;
+            animation: bounce 2s infinite;
+        }
+
+        /* Image styling */
+        .img1 {
+            border-radius: 30px;
+            width: 800px;
+            box-shadow: 5px 6px 7px maroon;
+        }
+
+        /* Paragraph styling */
+        .para {
+            width: 900px;
+            font-size: 20px;
+            background-color: whitesmoke;
+            box-shadow: 3px 4px 5px gray;
+            padding: 50px;
+            text-align: left;
+        }
+
+        /* Table styling */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 35px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Hidden sections toggle */
+        .two, .four, .six, .eight, .ten, .twelve {
+            display: none;
+            border: 1px solid;
+            border-radius: 10px;
+            margin-left: 120px;
+            font-weight: bold;
+            font-size: 17px;
+            width: 1000px;
+            padding: 5px;
+            margin-top: 8px;
+            text-align: center;
+            background: linear-gradient(to right, rgb(246, 204, 127), rgb(222, 120, 120));
+        }
+
+        /* Visible sections */
+        .one, .three, .five, .seven, .nine, .eleven {
+            border: 1px solid;
+            margin-left: 120px;
+            color: black;
+            margin-top: 5px;
+            width: 1000px;
+            text-align: center;
+            padding: 8px;
+            background: linear-gradient(to right, rgb(224, 113, 113),rgb(248, 209, 137));
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        /* Subscription section */
+        .container1 {
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 17px;
+        }
+
+        .email {
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+            box-shadow: 5px 6px 7px rgb(151, 23, 45);
+            border-color: transparent;
+        }
+
+        .btn1 {
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+
+        /* Footer text styling */
+        .para1 {
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Social media icons */
+        i {
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+        }
+
+        i:hover {
+            color: goldenrod;
+        }
+
+        /* Footer text and number styling */
+        .number {
+            color: rgb(148, 31, 31);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .p4 {
+            color: rgb(99, 98, 98);
+            font-size: 17px;
+        }
+
+        .p2 {
+            font-size: 17px;
+        }
+
+        .p3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Background image styling */
+        .container {
+            background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: fit-content;
+            backdrop-filter: blur(62px);
+        }
+        .img3{
+            height: 500px;
+        }
+    </style>
+
+</head>
+<div class="work">
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Page Header -->
+  <center>
+      <div class="container-fluid">
+          <h1 class="dengue">Dengue Fever</h1>
+          <!-- Social Media Links -->
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
+          <a href="https://www.intercom.com/"><i class="fa-brands fa-intercom"></i></a>
+      </div>
+  </center>
+  
+  <!-- Introduction Section -->
+  <center>
+      <div class="container2">
+          <img class="img1" src="dengue.png" alt="HIV Awareness">
+          <p class="para">
+            Dengue is a mosquito-borne viral infection. The infection causes flu-like illness, and occasionally develops into a potentially lethal complication called severe dengue. The global incidence of dengue has grown dramatically in recent decades. About half of the world’s population is now at risk. Dengue is found in tropical and sub-tropical climates worldwide, mostly in urban and semi-urban areas. There is no specific treatment for dengue/severe dengue, but early detection and access to proper medical care lowers fatality rates below 1%. Dengue prevention and control depends on effective vector control measures. A dengue vaccine has been licensed by several National Regulatory Authorities for use in people 9-45 years of age living in endemic settings. <br>
+
+            The Aedes aegypti mosquito is the primary vector of dengue. The virus is transmitted to humans through the bites of infected female mosquitoes. After virus incubation for 4-10 days, an infected mosquito is capable of transmitting the virus for the rest of its life. Infected symptomatic or asymptomatic humans are the main carriers and multipliers of the virus, serving as a source of the virus for uninfected mosquitoes. Patients who are already infected with the dengue virus can transmit the infection (for 4-5 days; maximum 12) via Aedes mosquitoes after their first symptoms appear. <br>
+            
+            Dengue should be suspected when a high fever (40°C/104°F) is accompanied by 2 of the following symptoms: severe headache, pain behind the eyes, muscle and joint pains, nausea, vomiting, swollen glands or rash. Symptoms usually last for 2-7 days, after an incubation period of 4-10 days after the bite from an infected mosquito. Severe dengue is a potentially deadly complication due to plasma leaking, fluid accumulation, respiratory distress, severe bleeding, or organ impairment. <br>
+            
+            There is no specific treatment for dengue fever. For severe dengue, medical care by physicians and nurses experienced with the effects and progression of the disease can save lives – decreasing mortality rates from more than 20% to less than 1%. Maintenance of the patient’s body fluid volume is critical to severe dengue care. <br>
+            
+            The main method to control or prevent the transmission of dengue virus is to combat vector mosquitoes. Careful clinical detection and management of dengue patients can significantly reduce mortality rates from severe dengue. <br>
+            
+             <br></p>
+        </div></center>
+  
+  <!-- Alert Banner -->
+ <div class="dengue-alert" style="background: linear-gradient(to right , yellow, maroon,maroon,yellow); text-align: center; padding: 10px;">
+  <h3 style="text-shadow: 2px 2px 3px black; color: white;">HIV INFORMATION</h3>
+ </div>
+  <!-- Information Table -->
+  <center>
+      <table class="table table-bordered" style="width: 80%; margin-top: 20px;">
+          <thead class="table-dark">
+              <tr>
+                  <th>Aspect</th>
+                  <th>Information</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>What is Dengue Fever?</strong></td>
+              <td>Dengue fever is a mosquito-borne disease that causes flu-like symptoms, including fever, headache, muscle and joint pain, and rash.</td>
+            </tr>
+            <tr>
+              <td><strong>First Outbreak</strong></td>
+              <td>The first confirmed outbreak of dengue fever was in 1779–1780 </td>
+            </tr>
+            <tr>
+              <td><strong>Symptoms</strong></td>
+              <td> High fever,
+                Headache,
+                Muscle and joint pain,
+                Itchy skin rash,
+                Nausea and vomiting,
+                Pain behind the eyes,
+                Fatigue,
+                Bleeding from the nose and gums,
+                Blood in urine, stool, or vomit,
+                Difficulty breathing,
+                </td>
+            </tr>
+            <tr>
+              <td><strong>Diagnosis</strong></td>
+              <td>Using a combination of clinical signs and symptoms, and laboratory tests.</td>
+            </tr>
+            <tr>
+              <td><strong>Treatment</strong></td>
+              <td>Paracetamol can help reduce fever. <br>
+                Seek medical attention immediately if you have symptoms.</td>
+            </tr>
+            <tr>
+              <td><strong>Prevention</strong></td>
+              <td>Insect Repellent,
+                Eliminate Breeding Sites,
+                Mosquito Nets & Screens,
+                Community Efforts,
+                Vaccination</td>
+            </tr>
+            <tr>
+              <td><strong>Vaccine</strong></td>
+              <td>Dengvaxia is the only dengue vaccine approved by the U.S. Food and Drug Administration </td>
+            </tr>
+          </tbody>
+      </table>
+  </center>
+  <!--hiv progress image-->
+  <center><img class="img3" src="denguefev.png" style="margin-top: 100px;"></center>
+
+
+  <!-- FAQ Section with jQuery Toggle -->
+  <div class="container4" style="margin-top: 100px; margin-bottom: 100px;">
+    <div class="one">Can dengue spread from person to person?</div>
+    <div class="two"> Dengue cannot be spread directly from person to person.</div>
+
+    <div class="three">What is the danger period of dengue?</div>
+    <div class="four"> Generally the dengue haemorrhagic fever or dengue shock syndrome occur after 3-5 days of fever. </div>
+
+    <div class="five">Which fruit is best for dengue?</div>
+    <div class="six"> A: Fruits rich in vitamin C, antioxidants, and hydration can support recovery from dengue fever. Some recommended fruits include oranges, grapefruits, strawberries, kiwi, papaya, watermelon, cucumber, coconut water, berries,pomegranate, mango, and pineapple. </div>
+
+    <div  class="seven">When was the first outbreak of dengue?</div>
+    <div class="eight">The first suspected outbreaks of dengue-like disease were reported in 1635 in Martinique and Guadeloupe and 1699 in Panama. </div>
+    <div  class="nine">How does dengue spread?</div>
+    <div class="ten">Dengue is spread through the bite of the female mosquito</div>
+    <div  class="eleven">Is there immunity to dengue fever?</div>
+    <div class="twelve">Recovery from infection by one dengue virus provides lifelong immunity against that particular virus serotype.  </div>
+ </div></center>
+  </div>
+  
+  <!-- jQuery script to toggle answers when questions are clicked -->
+<script>
+  $(document).ready(function(){
+      // Toggle answer visibility on clicking the question
+     $('.one').click(function(){
+       $('.two').slideToggle('slow');
+     });
+
+
+     $('.three').click(function(){
+       $('.four').slideToggle('slow');
+     });
+
+     $('.five').click(function(){
+       $('.six').slideToggle('slow');
+     });
+
+     $('.seven').click(function(){
+       $('.eight').slideToggle('slow');
+     });
+
+     $('.nine').click(function(){
+       $('.ten').slideToggle('slow');
+     });
+
+     $('.eleven').click(function(){
+       $('.twelve').slideToggle('slow');
+     });
+
+    });
+  </script>
+
+
+  
+  <!-- Email Subscription Section -->
+  <div class="container1">
+    <span>
+     <input class="email" type="email" placeholder="Email Address">
+     <button type="submit" class="btn1">SUBSCRIBED</button>
+    </span>
+     <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+            <p class="number">Tel: +251 11 551 77 </p>
+        </div>
+        <div class="col-md-2">
+            <p class="p3">Region Centres</p>
+            <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+        </div>
+        <div class="col-md-2">
+            <p class="p3">Resources</p>
+            <p class="p4">Corona virus disease 2019 <br> AU Covid-19 Respond Fund <br>Africa Medical Supplies Fund <br> Anti Biotic Gardien Fund</p>
+        </div>
+        <div class="col-md-2">
+            <p class="p3">About</p>
+            <p class="p4">Contact us <br> About us <br>Staff Directory <br> Partners <br> Events <br> Report a Concern</p>
+        </div>
+        <div class="col-md-2">
+            <p class="p3">Information</p>
+            <p class="p4">Years <br> Disease Information <br> Speeches <br>Resources <br>RISLNET</p>
+        </div>
+        <div class="col-md-2">
+            <p class="p3">Follow us</p>
+            <p class="p4">Instagram <br> Facebook <br>Whatsapp <br> Messenger <br> Youtube</p>
+        </div>
+    </div>
+ </div>
+
+  <script>
+         $(document).ready(function(){
+       $('.btn1').click(function(event){
+           event.preventDefault();
+
+           let email = $('.email').val();
+
+           let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+           if(!emailregex.test(email)){
+               alert('Enter a Valid Email Address.');
+               return false;
+           }
+           alert('Your Email Successfully Submit');
+           return true;
+       });
+   });
+  </script>
+</div>
+</body>
+</html>

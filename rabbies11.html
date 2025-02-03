@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+      <!--Icon Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+      <!--Jquery Link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+/*Sapfety Tips styling*/
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.text-centre{
+    font-size: 25px !important;
+    font-weight: bold !important;
+   }
+
+   .safety{
+    font-size: 40px;
+    font-weight: bold;
+   }
+
+    /*Animation*/
+@keyframes bounce {
+            0%, 100% {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-10px); 
+            }
+        }
+
+ /*Header*/       
+    .container-fluid{
+      background: 
+     linear-gradient(to right,rgba(0, 128, 0, 0.555),rgba(28, 134, 134, 0.479));
+       padding: 5px;
+        padding: 55px;
+    }
+    .RabiesVirus{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 3px 5px #000; 
+      color: #fff; 
+      animation: bounce 2s infinite;
+      margin-top: -15px;
+      font-size: 45px;
+    }
+    .icon{
+        margin-top: -15px;
+        font-size: 27px;
+        color: black;
+        padding: 5px;
+        text-shadow: 3px 3px 5px #000; 
+      color: #fff; 
+      animation: bounce 2s infinite;
+    }
+
+    /*Image + Information */
+    .img1{
+        border-radius: 30px;
+        width: 800px;
+        margin-top: -50px;
+        box-shadow: 4px 6px 5px rgb(92, 123, 51);
+    }
+    .para{
+        width: 900px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-top: -20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: whitesmoke;
+        box-shadow: 3px 4px 5px gray;
+        padding: 50px;
+    }
+   body{
+    background-color: #ebebeb;
+   }
+ 
+   /*Table Styling*/
+   table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 35px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.img3{
+  width: 800px;
+}
+.two,.four,.six,.eight,.ten,.twelve,.fourteen{
+  display: none;
+  border: 1px solid;
+  margin-left: 150px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 1000px;
+  padding: 8px;
+  background:linear-gradient(to right,rgb(36, 173, 155));
+}
+.one,.three,.five,.seven,.nine,.eleven,.thirteen{
+  border: 1px solid;
+  margin: 15px;
+  color: black;
+  width: 1000px;
+  padding: 8px;
+ background: linear-gradient(to right,rgba(0, 128, 0, 0.555),rgba(28, 134, 134, 0.479));
+  margin-left: 150px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.container4{
+  text-align: center;
+  margin: 15px;
+  padding: 30px;
+}
+
+
+/*Footer styling*/
+.container1{
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 17px;
+        }
+        .email{
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+        .para1{
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: goldenrod;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: rgb(148, 31, 31);
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   a{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .container{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+  backdrop-filter: blur(62px);
+   }
+
+   
+</style>
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Body-->
+    <div class="work">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!--Header-->
+    <center><div class="container-fluid">
+        <h1 class="RabiesVirus">Rabies Virus</h1>
+        <a href="https://www.facebook.com/"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="https://x.com/?lang=en"><span  class="icon"><i class="fa-brands fa-twitter"></i></span></a>
+        <a href="https://www.youtube.com/"><span  class="icon"><i class="fa-brands fa-youtube"></i></span></a>
+        <a href="https://www.messenger.com/"><span  class="icon"><i class="fa-brands fa-facebook-messenger"></i></span></a>
+        <a href="https://www.intercom.com/"><span  class="icon"><i class="fa-brands fa-intercom"></i></span></a>
+    </div></center>
+
+    <!--Image + Paragraph Information-->
+  <center><div class="container2">
+    <img class="img1" src=https://i.pinimg.com/736x/9a/87/89/9a8789cf8ad3ad134a10a00755b1f935.jpg alt="">
+   
+    <p class="para">
+        Rabies virus (RABV) is transmitted through direct contact (such as through broken skin or mucous membranes in your eyes, nose, or mouth) with saliva or brain/nervous system tissue from an infected animal. Rabies is fatal but preventable. It can spread to people and pets if they are bitten or scratched by a rabid animal.<br>
+
+        Rabies virus gets into your body when the saliva (spit) of an infected animal gets into an open wound (usually from a bite). It moves very slowly along nerves into your central nervous system (your brain and spinal cord). When it reaches your brain, the damage causes neurological symptoms. From there, rabies leads to coma and death. <br>
+        
+        Rabies is most common in rural parts of Asia and Africa, though it’s found on all continents except Antarctica. In the U.S., rabies is commonly found in wild animals. But dogs carry rabies in many other countries. Children are more likely to get rabies than adults. Rabies moves from an infected wound to your brain over time. There are several phases that most people go through: incubation, prodromal phase, acute neurologic phase and coma.<br></p>
+    </div></center>
+
+      <!--Alert-->  
+    <div class="alert alert-danger" role="alert" style="text-align: center; background: linear-gradient(to right,rgba(0, 128, 0, 0.555),rgba(28, 134, 134, 0.479)); color: white; font-weight: bold; font-size: 55px !important;">
+      <h3>Rabies Virus Information</h3>
+    </div>
+ 
+        <!--Table-->
+        <center>
+            <table class="table table-bordered" style="width: 80%; margin-top: 20px;">
+              <thead class="table-dark">
+                <tr>
+                  <th>Aspect</th>
+                  <th>Information</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>What is Rabies Virus?</strong></td>
+                  <td>Rabies is a viral disease that causes encephalitis in humans and other mammals. It was historically referred to as hydrophobia because its victims would panic when offered liquids to drink.</td>
+                </tr>
+                <tr>
+                  <td><strong>First Outbreak</strong></td>
+                  <td>The first written record of rabies is from around 1930 BC in the Mesopotamian Codex of Eshnunna. The earliest evidence of rabies in humans and dogs dates back to 2300 BC in the Mosaic Esmuna Code of Babylon.</td>
+                </tr>
+                <tr>
+                  <td><strong>Symptoms</strong></td>
+                  <td>Initial symptoms: Flu-like symptoms like fever, headache, weakness, and discomfort. You might also feel prickling,  itching, or discomfort at the bite site. <br> 
+                Brain inflammation: As the disease progresses, the brain and spinal cord become inflamed. This can lead to confusion, anxiety, delirium, hallucinations, and agitation. <br> 
+                    Behavioral changes: You might experience hyperactivity, excitable behavior, or strange behavior. <br>
+                    Fear: You might develop a fear of water (hydrophobia) or a fear of fresh air (aerophobia). <br>
+                    Muscle spasms: You might experience painful spasms in your throat and larynx when you try to drink. <br>
+                    Paralysis: You might be unable to move. <br>
+                    Difficulty swallowing or breathing: You might have difficulty swallowing or breathing. </td>
+                </tr>
+                <tr>
+                  <td><strong>Diagnosis</strong></td>
+                  <td>Several tests are necessary to diagnose rabies antemortem (before death) in humans; no single test is sufficient. Tests are performed on samples of saliva, serum, spinal fluid, and skin biopsies of hair follicles at the nape of the neck.</td>
+                </tr>
+                <tr>
+                  <td><strong>Treatment</strong></td>
+                  <td>Rabies immune globulin: An injection that provides immediate protection while the vaccine starts working. <br>
+                    Rabies vaccine: A series of shots given over 14 days. <br> 
+                    Wound washing: Thoroughly cleansing the wound may reduce the likelihood of developing rabies </td>
+                </tr>
+                <tr>
+                  <td><strong>Prevention</strong></td>
+                  <td>Rabies can be prevented by reducing exposure to rabid animals, vaccinating pets, and seeking prompt medical care if exposed</td>
+                </tr>
+                <tr>
+                  <td><strong>Vaccine</strong></td>
+                  <td>Two types of vaccines to protect against rabies in humans exist - nerve tissue and cell culture vaccines. WHO recommends replacement of nerve tissue vaccines with the more efficacious, safer vaccines developed through cell culture as soon as possible.</td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+
+          <!--Video-->
+      <center><img class="img3" src="Black Illustration Covid Virus Facebook Post.png" alt=""></center>
+          
+      <!--Questions-->
+      <center></center>  <div class="container4">
+            <div class="one">What is rabies?</div>
+            <div class="two">Rabies is a deadly viral disease that affects the nervous system of mammals, including humans. It spreads through the saliva of infected animals, usually via bites. </div>
+            <div class="three"> How does rabies spread?</div>
+            <div class="four"> Rabies spreads through bites, scratches, or when saliva from an infected animal enters open wounds, eyes, nose, or mouth. It cannot spread through air or casual contact. </div>
+            <div class="five"> Which animals can carry rabies?</div>
+            <div class="six">Dogs, cats, bats, raccoons, foxes, skunks, and monkeys are common carriers. Stray or wild animals have a higher risk of carrying the virus. </div>
+            <div  class="seven"> What are the symptoms of rabies in humans?</div>
+            <div class="eight"> Early symptoms include fever, headache, weakness, and tingling near the bite. Later, symptoms worsen to anxiety, hallucinations, difficulty swallowing, paralysis, and death. </div>
+            <div  class="nine"> How long does rabies take to show symptoms?</div>
+            <div class="ten">Symptoms usually appear within 1 to 3 months after exposure, but in some cases, they can appear within a few days or take more than a year. </div>
+            <div  class="eleven">What should I do if an animal bites or scratches me?</div>
+            <div class="twelve">Wash the wound immediately with soap and running water for 10–15 minutes. Then, seek medical attention as soon as possible for post-exposure rabies treatment. </div>
+            <div class="thirteen">Is there a cure for rabies?</div>
+            <div class="fourteen">No, once symptoms appear, rabies is almost always fatal. However, early treatment with post-exposure prophylaxis (PEP) can prevent the disease from developing.</div>
+         </div></center>
+
+         <!--Toogle-->
+         <script>
+           $(document).ready(function(){
+            $('.one').click(function(){
+              $('.two').slideToggle('slow');
+            });
+            $('.three').click(function(){
+              $('.four').slideToggle('slow');
+            });
+
+            $('.five').click(function(){
+              $('.six').slideToggle('slow');
+            });
+
+            $('.seven').click(function(){
+              $('.eight').slideToggle('slow');
+            });
+
+            $('.nine').click(function(){
+              $('.ten').slideToggle('slow');
+            });
+
+            $('.eleven').click(function(){
+              $('.twelve').slideToggle('slow');
+            });
+
+            $('.thirteen').click(function(){
+              $('.fourteen').slideToggle('slow');
+            });
+           });
+         </script>
+
+
+ <!-- Safety Tips Section -->
+ <section id="safety-tips" class="mb-5">
+    <h2 class="text-center text-secondary mb-4 safety">Safety Tips</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Report Animal Bites or Scratches </h5>
+            <p class="card-text">If you are bitten or scratched by an animal, wash the wound immediately with soap and running water  </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Vaccinate Your Pets</h5>
+            <p class="card-text">Ensure your pets, including dogs, cats, and even ferrets, receive regular rabies vaccinations. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Avoid Contact with Stray and Wild Animals</h5>
+            <p class="card-text">Never approach, touch, or feed stray dogs, cats, or wild animals such as bats, raccoons, foxes, or monkeys. .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--Footer Section-->
+   <div class="container1">
+    <span>
+     <input class="email" type="email" placeholder="Email Address">
+     <button type="submit" class="btn1">SUBSCRIBED</button>
+    </span>
+     <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+  </div>
+  
+  <div class="container">
+     <div class="row">
+         <div class="col-md-2">
+             <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+             <p class="number">Tel: +251 11 551 77 </p>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Region Centres</p>
+             <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Viruses</p>
+             <a href="#">Chikungunya Virus</a><br>
+             <a href="#">Cholera Virus</a><br>
+             <a href="#">HIV Virus</a><br>
+             <a href="#">Covid-19 Virus</a><br>
+             <a href="#">Dengue Virus</a><br>
+             <a href="#">Ebola Virus</a><br>
+             <a href="#">Hepatisis C Virus</a>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">About</p>
+             <a href="#">Contact Us</a><br>
+             <a href="#">About Us</a><br>
+             <a href="#">Feedback</a><br>
+             <a href="#">Login</a><br>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Information</p>
+            <a href="#">Years Information</a><br>
+            <a href="#">Disease Information</a><br>
+            <a href="#">News Information</a><br>
+            </div>
+            <div class="col-md-2">
+                <p class="p3">Follow us</p>
+               <a href="#">Instagram</a><br>
+               <a href="#">Facebook</a><br>
+               <a href="#">Whatsapp</a><br>
+               <a href="#">Messenger</a><br>
+               <a href="#">Youtube</a><br>
+            </div>
+        </div>
+    </div>
+  
+         <!--Validation on email-->
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(event){
+                event.preventDefault();
+  
+                let email = $('.email').val();
+  
+                let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+                if(!emailregex.test(email)){
+                    alert('Enter a Valid Email Address.');
+                    return false;
+                }
+                alert('Your Email Successfully Submit');
+                return true;
+            });
+        });
+    </script>
+    </body>

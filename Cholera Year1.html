@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cholera History and Impact by Year</title>
+
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Jquery Link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+   <!--Icon link-->
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+      </head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right,#2e4b68,rgb(99, 188, 218));
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container-1 {
+            width: 80%;
+            margin: 2em auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .year-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        .year-section h2 {
+            margin: 0;
+            color: #2980b9;
+        }
+        .year-section p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .year-section ul {
+            margin-left: 20px;
+        }
+        .year-section ul li {
+            margin: 5px 0;
+            list-style-type: disc;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        a{
+            font-size: 25px;
+            color:  rgb(223, 220, 220);
+        }
+        .cholera{
+            font-weight: bold;
+            font-size: 35px;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(223, 220, 220);
+        }
+       
+        /*footer styling section*/
+        .container1{
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 17px;
+        }
+        .email{
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+        .para1{
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: goldenrod;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: rgb(148, 31, 31);
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   .container{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+  backdrop-filter: blur(62px);
+   }
+
+   a{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+        
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Header-->
+    <header>
+        <h1 class="cholera">Cholera History by Year</h1>
+        <nav>
+            <ul>
+                <li><a href="#1831">1831</a></li>
+                <li><a href="#1850">1850</a></li>
+                <li><a href="#1900">1900</a></li>
+                <li><a href="#1970">1970</a></li>
+                <li><a href="#2000">2000</a></li>
+                <li><a href="#2010">2010</a></li>
+                <li><a href="#2020">2020</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Cholera Information by Year-->
+    <div class="container-1">
+        
+        <!--1831-->
+        <section class="year-section" id="1831">
+            <h2>1831 - The First Major Cholera Pandemic</h2>
+            <p>The first major cholera pandemic began in India and spread to Russia and Europe, marking the start of a series of global cholera outbreaks.</p>
+            <ul>
+                <li>First recognized as a global health threat in India.</li>
+                <li>Spread across the Middle East to Russia and Europe.</li>
+                <li>Large-scale fatalities in major cities.</li>
+            </ul>
+        </section>
+
+        <!--1850-->
+        <section class="year-section" id="1850">
+            <h2>1850 - Third Cholera Pandemic</h2>
+            <p>The third cholera pandemic became the deadliest, particularly affecting Europe and Asia, causing widespread panic and awareness of the disease.</p>
+            <ul>
+                <li>Notable for widespread deaths in London and other European cities.</li>
+                <li>Heightened awareness about sanitation and public health measures.</li>
+                <li>New investigations into cholera’s transmission by contaminated water.</li>
+            </ul>
+        </section>
+
+        <!--1900-->
+        <section class="year-section" id="1900">
+            <h2>1900 - The Disease in the Americas</h2>
+            <p>Cholera began spreading to the Americas, particularly affecting Cuba and the United States, after earlier outbreaks in Asia and Europe.</p>
+            <ul>
+                <li>Cholera outbreaks in Cuba and South America.</li>
+                <li>International measures were introduced to prevent spread between continents.</li>
+            </ul>
+        </section>
+
+        <!--1970-->
+        <section class="year-section" id="1970">
+            <h2>1970 - The Seventh Cholera Pandemic</h2>
+            <p>The seventh pandemic began in Indonesia and spread globally, marking the ongoing challenge of cholera in the modern world.</p>
+            <ul>
+                <li>Ongoing spread to Africa, Asia, and Latin America.</li>
+                <li>Introduction of oral rehydration therapy (ORT) to treat cholera patients.</li>
+            </ul>
+        </section>
+
+        <!--2000-->
+        <section class="year-section" id="2000">
+            <h2>2000 - Cholera in Africa</h2>
+            <p>Cholera became a significant public health issue in sub-Saharan Africa, with widespread outbreaks across several countries.</p>
+            <ul>
+                <li>Massive cholera outbreaks in countries like Zimbabwe, Malawi, and Kenya.</li>
+                <li>Ongoing public health campaigns focused on safe water and sanitation.</li>
+            </ul>
+        </section>
+
+        <!--2010-->
+        <section class="year-section" id="2010">
+            <h2>2010 - Cholera Outbreak in Haiti</h2>
+            <p>The cholera outbreak in Haiti became one of the deadliest in modern times, exacerbated by poor infrastructure after the 2010 earthquake.</p>
+            <ul>
+                <li>Haiti's cholera outbreak led to thousands of deaths and widespread suffering.</li>
+                <li>International aid efforts focused on providing clean water and medical treatment.</li>
+            </ul>
+        </section>
+
+        <!--2020-->
+        <section class="year-section" id="2020">
+            <h2>2020 - Cholera Remains a Threat</h2>
+            <p>While cholera has become less prevalent in certain areas, it remains a significant threat in countries with poor sanitation systems.</p>
+            <ul>
+                <li>Cholera outbreaks in Yemen, Bangladesh, and Africa.</li>
+                <li>Ongoing vaccination campaigns and better access to clean water in some regions.</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="container1">
+    <input class="email" type="email" placeholder="Email Address">
+    <button type="submit" class="btn1">SUBSCRIBED</button>
+   </span>
+    <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+  </div>
+  
+<div class="row">
+    <div class="col-md-2">
+        <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+        <p class="number">Tel: +251 11 551 77 </p>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Region Centres</p>
+        <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Viruses</p>
+        <a href="chikungunya.html">Chikungunya Virus</a><br>
+        <a href="cholera1.html">Cholera Virus</a><br>
+        <a href="hiv.html">HIV Virus</a><br>
+        <a href="covid19.html">Covid-19 Virus</a><br>
+        <a href="dengu.html">Dengue Virus</a><br>
+        <a href="ebola virus.html">Ebola Virus</a><br>
+        <a href="hepaC type.html">Hepatisis C Virus</a>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">About</p>
+        <a href="contat us.html">Contact Us</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="contat us.html">Feedback</a><br>
+        <a href="loginpage.html">Login</a><br>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Information</p>
+       <a href="Covid 19 year.html">Years Information</a><br>
+       <a href="diseases.html">Disease Information</a><br>
+       <a href="diseases.html">News Information</a><br>
+       </div>
+       <div class="col-md-2">
+           <p class="p3">Follow us</p>
+          <a href="https://www.facebook.com/">Facebook</a><br>
+          <a href="https://x.com/?lang=en">Twitter</a><br>
+          <a href="https://www.messenger.com/">Messenger</a><br>
+          <a href="https://www.youtube.com/">Youtube</a><br>
+       </div>
+   </div>
+  </div>
+<script>
+ $(document).ready(function(){
+          $('.one').click(function(){
+            $('.two').slideToggle('slow');
+          });
+
+
+          $('.three').click(function(){
+            $('.four').slideToggle('slow');
+          });
+
+          $('.five').click(function(){
+            $('.six').slideToggle('slow');
+          });
+
+          $('.seven').click(function(){
+            $('.eight').slideToggle('slow');
+          });
+
+          $('.nine').click(function(){
+            $('.ten').slideToggle('slow');
+          });
+
+          $('.eleven').click(function(){
+            $('.twelve').slideToggle('slow');
+          });
+
+         });
+$(document).ready(function(){
+    $('.btn1').click(function(event){
+        event.preventDefault();
+
+        let email = $('.email').val();
+
+        let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+        if(!emailregex.test(email)){
+            alert('Enter a Valid Email Address.');
+            return false;
+        }
+        alert('Your Email Successfully Submit');
+        return true;
+    });
+});
+</script>
+
+   
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viruses</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         header {
+    background: linear-gradient(90deg,#9f6b51,whitesmoke,whitesmoke,#9f6b51 );
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1.2s ease-in-out;
+    }
+    @keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+  .container-fluid{
+    background: linear-gradient(90deg, #790909,#6b2023,#82271f,#6b2023)
+  }
+header h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Navbar Links */
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+nav .menu li a:hover {
+    background-color: #4b86c9;
+    transform: scale(1.1);
+}
+
+/* Toggle Button */
+button.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1{
+    text-align: center;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        background: #1d3557;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav .menu.show {
+        display: flex;
+    }
+
+    button.menu-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+}
+
+    .logo a img {
+    height: 100px;  /* Adjust the height to match the navbar height */
+    width: auto;   /* Keep the aspect ratio intact */
+}
+
+    
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+      #a1{
+        color:rgb(98, 28, 28);
+        gap: 7px;
+        text-decoration: dashed;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: ;
+        border: none;
+      }
+      #a1:hover{
+        text-decoration: underline;
+        color: #82271f;
+        border: none;
+        text-shadow: 1px 1px 2px #82271f;
+      }
+      .dropdown-menu{
+        background-color: #790909;
+        color: #fff;
+      }
+      .dropdown-item{
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header>
+      <div class="logo">
+      <a id="logo" class="navbar-brand logo" href="#"><img src="logo.png" alt=""><img src="" alt=""><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Viruses</title>
+            <link rel="icon" href="logo.png">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                 header {
+            background: linear-gradient(90deg,#9f6b51,whitesmoke,whitesmoke,#9f6b51 );
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideDown 1.2s ease-in-out;
+            }
+            @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+          .container-fluid{
+            background: linear-gradient(90deg, #790909,#6b2023,#82271f,#6b2023)
+          }
+        header h1 {
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        nav {
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        /* Navbar Links */
+        nav .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            transition: transform 0.5s ease-in-out;
+            transform-origin: top;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        nav .menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background-color 0.4s, transform 0.3s;
+        }
+        
+        nav .menu li a:hover {
+            background-color: #4b86c9;
+            transform: scale(1.1);
+        }
+        
+        /* Toggle Button */
+        button.menu-toggle {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        /* Responsive Menu */
+        @media (max-width: 768px) {
+            nav .menu {
+                display: none;
+                flex-direction: column;
+                background: #1d3557;
+                position: absolute;
+                top: 0px;
+                right: 0;
+                width: 100%;
+            }
+        
+            nav .menu.show {
+                display: flex;
+            }
+        
+            button.menu-toggle {
+                display: block; /* Show toggle button on smaller screens */
+            }
+        }
+        
+            .logo a img {
+            height: 100px;  /* Adjust the height to match the navbar height */
+            width: auto;   /* Keep the aspect ratio intact */
+        }
+        
+            
+                header h1 {
+                    font-size: 3rem;
+                    margin: 0;
+                    font-weight: 700;
+                }
+              #a1{
+                color:rgb(98, 28, 28);
+                gap: 7px;
+                text-decoration: dashed;
+                font-size: 22px;
+                font-style: italic;
+                font-weight: ;
+                border: none;
+              }
+              #a1:hover{
+                text-decoration: underline;
+                color: #82271f;
+                border: none;
+                text-shadow: 1px 1px 2px #82271f;
+              }
+              .dropdown-menu{
+                background-color: #790909;
+                color: #fff;
+              }
+              .dropdown-item{
+                color: #fff;
+              }
+            </style>
+        </head>
+        <body>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <header>
+              <div class="logo">
+              <a id="logo" class="navbar-brand logo" href="#"><img src="logo.png" alt=""><img src="LOGO_GIRL-01-removebg-preview.png" alt=""></a>
+            </div>
+              <nav>
+                  <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+                  <ul class="menu">
+                    <div class="dropdown">
+                      <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link active" aria-current="page" href="#">About us</a>
+                      </button>
+                      
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                        <div class="dropdown">
+                          <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <a class="nav-link active" aria-current="page" href="#">Disease Information </a>
+                          </button>
+                          
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <a class="nav-link active" aria-current="page" href="#">Year wise listing  </a>
+                          </button>
+                          
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <a class="nav-link active" aria-current="page" href="#">Contact us </a>
+                          </button>
+                          
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <a class="nav-link active" aria-current="page" href="#">Feed back </a>
+                          </button>
+                          
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                  </ul>
+                </div>
+              </div>
+                  </ul>
+              </nav>
+              </header>
+        </body>
+        </html></a>
+    </div>
+      <nav>
+          <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+          <ul class="menu">
+            <div class="dropdown">
+              <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link active" aria-current="page" href="#">About us</a>
+              </button>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Disease Information </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Year wise listing  </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Contact us </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Feed back </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+          </ul>
+        </div>
+      </div>
+          </ul>
+      </nav>
+      </header>
+</body>
+</html>

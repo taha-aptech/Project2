@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+/* Bounce animation for elements */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Element remains at its original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Moves up slightly */
+    }
+}
+
+/* Container styling with a gradient background */
+.container-fluid {
+    background: linear-gradient(to right, rgb(22, 85, 137), rgb(121, 171, 121));
+    padding: 55px; /* Removed duplicate padding */
+}
+
+/* Styling for the COVID-19 title */
+.covid-19 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #000;
+    color: #fff;
+    animation: bounce 2s infinite;
+    margin-top: -15px;
+}
+
+/* Icon styling with bounce effect */
+.icon {
+    margin-top: -15px;
+    font-size: 27px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px #000;
+    color: #fff;
+    animation: bounce 2s infinite;
+}
+
+/* Image styling with shadow effect */
+.img1 {
+    border-radius: 30px;
+    width: 800px;
+    margin-top: -50px;
+    box-shadow: 5px 6px 7px rgb(22, 9, 119);
+}
+
+/* Paragraph styling with background and shadow */
+.para {
+    width: 900px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: whitesmoke;
+    box-shadow: 3px 4px 5px gray;
+    padding: 50px;
+    margin-top: -20px; /* Removed redundant margin-top */
+}
+
+/* Global background color */
+body {
+    background-color: #ebebeb;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 35px;
+}
+
+/* Table header and cell styling */
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Header background and text color */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Cell background color */
+td {
+    background-color: #f9f9f9;
+}
+
+/* Row hover effect */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Image styling for another image class */
+.img3 {
+    width: 700px;
+}
+
+/* Hidden elements styling */
+.two, .four, .six, .eight, .ten, .twelve {
+    display: none;
+    margin: 8px;
+    border: 1px solid;
+    margin-left: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 1000px;
+    padding: 5px;
+    background: linear-gradient(to right, rgb(167, 182, 244), rgb(138, 195, 205));
+}
+
+/* Visible elements styling */
+.one, .three, .five, .seven, .nine, .eleven {
+    border: 1px solid;
+    margin: 5px;
+    color: black;
+    width: 1000px;
+    padding: 12px;
+    background: linear-gradient(to right, rgb(138, 195, 205), rgb(180, 193, 243));
+    margin-left: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Centered container with padding and margin */
+.container4 {
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+</style>
+</head>
+<body>
+    <div class="work">
+        <!-- Bootstrap JavaScript bundle for responsive design and UI components -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <!-- Centering content using container-fluid inside a centered div -->
+        <center><div class="container-fluid">
+            <h1 class="covid-19">Covid-19</h1>
+            
+            <!-- Social Media Links with Font Awesome Icons -->
+            <a href="https://www.facebook.com/"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
+            <a href="https://x.com/?lang=en"><span class="icon"><i class="fa-brands fa-twitter"></i></span></a>
+            <a href="https://www.youtube.com/"><span class="icon"><i class="fa-brands fa-youtube"></i></span></a>
+            <a href="https://www.messenger.com/"><span class="icon"><i class="fa-brands fa-facebook-messenger"></i></span></a>
+            <a href="https://www.intercom.com/"><span class="icon"><i class="fa-brands fa-intercom"></i></span></a>
+        </div></center>
+    
+        <!-- Content section containing an image and information about COVID-19 -->
+        <center><div class="container2">
+            <!-- COVID-19 related image -->
+            <img class="img1" src="https://media.springernature.com/lw725/springer-cms/rest/v1/content/17826776/data/v2" alt="Covid-19 virus image">
+           
+            <!-- Informative paragraph about COVID-19 -->
+            <p class="para">
+                The 2019 novel coronavirus disease (COVID-19) is a communicable respiratory disease caused by a new strain of coronavirus that causes illness in humans. Scientists are still learning about the disease, and think that the virus began in animals. At some point, one or more humans acquired infection from an animal, and those infected humans began transmitting infection to other humans. <br>
+    
+                The disease spreads from person to person through infected air droplets that are projected during sneezing or coughing. It can also be transmitted when humans have contact with hands or surfaces that contain the virus and touch their eyes, nose, or mouth with the contaminated hands. <br>
+                
+                COVID-19 was first reported in China, but it has now spread throughout the world. <br>
+                
+                <!-- Preventative measures against COVID-19 -->
+                There is currently no known vaccine or treatment for COVID-19. Infection can be prevented by observing personal hygiene practices: <br> <br>
+                
+                1. Wash your hands regularly with soap and water or alcohol-based hand rub. <br>
+                2. Make sure you have received all recommended vaccines. <br>
+                3. If the influenza vaccine is available in your community, you should try to obtain it. Influenza virus causes symptoms similar to 2019-nCoV. If you can prevent influenza infection, you can also reduce the likelihood of needing to visit a health care facility for evaluation of respiratory infection. If you develop fever, cough, and/or difficulty in breathing: <br>
+                
+                <!-- Instructions for symptomatic individuals -->
+                Cover your cough or sneeze in your inner flexed arm/elbow or on a tissue paper. <br>
+                If you have mild symptoms, stay at home. Do not go to school, to work, or to other public places until you are completely free of all symptoms. <br>
+                If you have more severe symptoms (such as difficulty in breathing), cover your mouth with a mask or scarf. Go to a medical facility and immediately notify the first person you encounter (even a security guard) that you are worried that you have a respiratory infection. <br>
+                
+            </p>
+        </div></center>
+    </div>
+    
+
+    <!-- Alert box for COVID-19 information -->
+<div class="alert alert-danger" role="alert" style="text-align: center; background:linear-gradient(to right,  rgb(22, 85, 137) , rgb(121, 171, 121)); color: white; font-weight: bold; font-size: 35px !important; text-shadow: 2px 2px 3px black;">
+    <h3>COVID-19 INFORMATION</h3>
+</div>
+
+<!-- Centered table for COVID-19 details -->
+<center>
+    <table class="table table-bordered" style="width: 80%; margin-top: 20px;">
+        <!-- Table header with dark background -->
+        <thead class="table-dark">
+            <tr>
+                <th>Aspect</th>
+                <th>Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for what COVID-19 is -->
+            <tr>
+                <td><strong>What is Covid-19?</strong></td>
+                <td>COVID-19 is the disease caused by the SARS-CoV-2 coronavirus. It usually spreads between people in close contact.</td>
+            </tr>
+            <!-- Row for first outbreak details -->
+            <tr>
+                <td><strong>First Outbreak</strong></td>
+                <td>The illness onset of the first laboratory-confirmed case of 2019-nCoV infection was on December 1, 2019 in Wuhan.</td>
+            </tr>
+            <!-- Row for symptoms -->
+            <tr>
+                <td><strong>Symptoms</strong></td>
+                <td>Fever or chills, Cough, Shortness of breath or difficulty breathing, Fatigue, Muscle or body aches, Headache, New loss of taste or smell, Sore throat.</td>
+            </tr>
+            <!-- Row for diagnosis information -->
+            <tr>
+                <td><strong>Diagnosis</strong></td>
+                <td>Viral tests look for a current COVID-19 infection.</td>
+            </tr>
+            <!-- Row for treatment options -->
+            <tr>
+                <td><strong>Treatment</strong></td>
+                <td>Medications to reduce fever (such as acetaminophen or ibuprofen). Drinking water to stay hydrated. Getting plenty of rest to help your body fight off the virus.</td>
+            </tr>
+            <!-- Row for prevention measures -->
+            <tr>
+                <td><strong>Prevention</strong></td>
+                <td>Getting vaccinated, wearing a mask during times of high transmission, staying 6 feet apart, washing hands often, and avoiding sick people.</td>
+            </tr>
+            <!-- Row for vaccine details -->
+            <tr>
+                <td><strong>Vaccine</strong></td>
+                <td>Moderna, Pfizer-BioNTech, and Novavax vaccines have all been tested and proven safe.</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+
+     <!-- Centering the image -->
+<center>
+    <img class="img3" src="covideffect.png.png" alt="COVID Effects">
+</center>
+
+<!-- Container for FAQ section -->
+<center>
+    <div class="container4">
+        
+        <!-- Question and answer section -->
+        <div class="one">How does COVID affect the heart?</div>
+        <div class="two">COVID-19 may increase your risk of a heart attack or stroke.</div>
+
+        <div class="three">What causes COVID?</div>
+        <div class="four">COVID-19 is caused by infection with the severe acute respiratory syndrome coronavirus 2, also called SARS-CoV-2.</div>
+
+        <div class="five">How is COVID treated?</div>
+        <div class="six">Over-the-counter medicines, such as acetaminophen or ibuprofen.</div>
+
+        <div class="seven">What are the worst days of COVID?</div>
+        <div class="eight">
+            Day 8-10: Symptoms may peak, including high fever and significant respiratory distress. <br>
+            Day 11-12: Plateau of symptoms; monitoring required for any signs of improvement or worsening.
+        </div>
+
+        <div class="nine">How to protect yourself from diseases?</div>
+        <div class="ten">
+            Handle & Prepare Food Safely,<br>
+            Wash Hands Often,<br>
+            Clean & Disinfect Commonly Used Surfaces,<br>
+            Cough & Sneeze Into Your Sleeve,<br>
+            Don't Share Personal Items,<br>
+            Get Vaccinated,<br>
+            Avoid Touching Wild Animals.
+        </div>
+
+        <div class="eleven">What are the symptoms of corona disease?</div>
+        <div class="twelve">
+            Fever or chills, Cough, Shortness of breath or difficulty breathing, Fatigue, Muscle or body aches, 
+            Headache, New loss of taste or smell, Sore throat.
+        </div>
+    </div>
+</center>
+
+<!-- jQuery script to toggle answers when questions are clicked -->
+<script>
+    $(document).ready(function(){
+        // Toggle answer visibility on clicking the question
+        $('.one').click(function(){
+            $('.two').slideToggle('slow');
+        });
+
+        $('.three').click(function(){
+            $('.four').slideToggle('slow');
+        });
+
+        $('.five').click(function(){
+            $('.six').slideToggle('slow');
+        });
+
+        $('.seven').click(function(){
+            $('.eight').slideToggle('slow');
+        });
+
+        $('.nine').click(function(){
+            $('.ten').slideToggle('slow');
+        });
+
+        $('.eleven').click(function(){
+            $('.twelve').slideToggle('slow');
+        });
+    });
+</script>
+
+    </body>
+</html>
+
+

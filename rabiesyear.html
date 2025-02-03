@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rabies Virus Outbreak History</title>
+
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Jquery Link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+   <!--Icon link-->
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+      </head>
+
+    <style>
+         header{
+  background: linear-gradient(90deg, #191919,#6b2023,#6b2023,#861a11);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  animation: slideDown 1.2s ease-in-out;
+  }
+  @keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+header h1 {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Navbar Links */
+nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: background-color 0.4s, transform 0.3s;
+}
+
+nav .menu li a:hover {
+background: linear-gradient(90deg, #191919,#6b2023,#861a11);
+  transform: scale(1.1);
+}
+
+/* Toggle Button */
+button.menu-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+h1{
+  text-align: center;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  nav .menu {
+      display: none;
+      flex-direction: column;
+      background: #191919;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 100%;
+  }
+
+  nav .menu.show {
+      display: flex;
+  }
+
+  button.menu-toggle {
+      display: block; /* Show toggle button on smaller screens */
+  }
+}
+
+  .logo a img {
+  height: 80px;  /* Adjust the height to match the navbar height */
+  width: 200px;   /* Keep the aspect ratio intact */
+  }
+  
+      header h1 {
+          font-size: 3rem;
+          margin: 0;
+          font-weight: 700;
+      }
+    #a1{
+      color:  #191919;
+      gap: 7px;
+      text-decoration: dashed;
+      font-size: 20px;
+      text-decoration: bold;
+    }
+    .dropdown-menu{
+      background: linear-gradient(90deg,#6b2023,#861a11);
+      color: #191919;
+    }
+    .dropdown-item{
+      color: #fff;
+    }
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .head{
+            background: linear-gradient(to right,#2e4b68,rgb(99, 188, 218));
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container-1 {
+            width: 80%;
+            margin: 2em auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .year-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        .year-section h2 {
+            margin: 0;
+            color: #2980b9;
+        }
+        .year-section p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .year-section ul {
+            margin-left: 20px;
+        }
+        .year-section ul li {
+            margin: 5px 0;
+            list-style-type: disc;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+a{
+    font-size: 25px;
+    color:  rgb(223, 220, 220);
+}
+.covid{
+    font-weight: bold;
+    font-size: 35px;
+}
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(223, 220, 220);
+}
+
+
+/*footer section*/
+.container1{
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 17px;
+        }
+        .email{
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+        .para1{
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: goldenrod;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: rgb(148, 31, 31);
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   .container{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+  backdrop-filter: blur(62px);
+   }
+
+   a{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+    </style>
+</head>
+<body>
+     <!--Bootstrap Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="logo">
+        <a id="logo" class="navbar-brand logo" href="#"><img src="WhatsApp_Image_2025-01-28_at_16.06.38_79ea369a-removebg-preview.png" alt=""></a>
+      </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul class="menu">
+              <div class="dropdown">
+                <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active" aria-current="page" href="virusabout.html">About us</a>
+                </button>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="virusabout.html">About us</a></li>
+                  <li><a class="dropdown-item" href="whatarevirus.html">What are Viruses?</a></li>
+                  <li><a class="dropdown-item" href="virusabout.html">How do Viruses Spread?</a></li>
+                </ul>
+              </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Disease Information </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="diseases.html">
+                        Disease</a></li>
+                      <li><a class="dropdown-item" href="">
+                        Chikungunya</a></li>
+                      <li><a class="dropdown-item" href="">
+                        Cholera</a></li>
+                      <li><a class="dropdown-item" href="">COVID-19</a></li>
+                      <li><a class="dropdown-item" href="#">HIV</a></li>
+                      <li><a class="dropdown-item" href="#">Dengue</a></li>
+                      <li><a class="dropdown-item" href="#">EVD</a></li>
+                      <li><a class="dropdown-item" href="#">Hepatitis C</a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Rabies</a></li>
+                      <li><a class="dropdown-item" href="diseases.html">NEWS</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Year wise listing  </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="">COVID-19 years</a></li>
+                      <li><a class="dropdown-item" href="#">HIV years</a></li>
+                      <li><a class="dropdown-item" href="#">Dengue years</a></li>
+                      <li><a class="dropdown-item" href="#">EVD years</a></li>
+                      <li><a class="dropdown-item" href="#">Hepatitis C years</a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Rabies years</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Contact us </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact us</a></li></a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Feed back</a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Feed back</a></li>
+                    </ul>
+                  </div>
+            </ul>
+          </div>
+        </div>
+            </ul>
+        </nav>
+    </header>
+<div class="head">
+    <h1 class="covid">Rabies Virus Information by Year</h1>
+    <nav>
+        <ul>
+            <li><a href="#1885">1885</a></li>
+            <li><a href="#1905">1905</a></li>
+            <li><a href="#1950">1950</a></li>
+            <li><a href="#1970">1970</a></li>
+            <li><a href="#1990">1990</a></li>
+            <li><a href="#2024">2024</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!--Years Information-->
+<div class="container-1">
+
+    <!--1885-->
+    <section class="year-section" id="1885">
+        <h2>1885 - Rabies Vaccine Developed</h2>
+        <p>In 1885, Louis Pasteur and Émile Roux developed the first rabies vaccine, which proved to be successful in preventing the disease after exposure to the virus.</p>
+        <ul>
+            <li>The first effective rabies vaccine was developed by Pasteur and Roux.</li>
+            <li>This vaccine marked a major breakthrough in the prevention of rabies, saving countless lives.</li>
+            <li>It became the first successful treatment for rabies after exposure.</li>
+        </ul>
+    </section>
+
+    <!--1905-->
+    <section class="year-section" id="1905">
+        <h2>1905 - Rabies Serum for Post-Exposure Treatment</h2>
+        <p>In 1905, a rabies serum was developed to further enhance the treatment of individuals who had been exposed to rabies. This serum was used in conjunction with the rabies vaccine.</p>
+        <ul>
+            <li>The development of rabies serum allowed for better post-exposure treatment.</li>
+            <li>This serum was used to complement the vaccine and offered more effective prevention of the disease.</li>
+        </ul>
+    </section>
+
+    <!--1950-->
+    <section class="year-section" id="1950">
+        <h2>1950 - Global Rabies Control Efforts Begin</h2>
+        <p>In the 1950s, global efforts to control rabies started to take off, with a strong focus on vaccinating domestic animals, especially dogs, which were the primary source of rabies transmission to humans.</p>
+        <ul>
+            <li>Mass vaccination campaigns for dogs were initiated to prevent rabies transmission to humans.</li>
+            <li>Public health efforts were ramped up to raise awareness about the importance of vaccination and control.</li>
+        </ul>
+    </section>
+
+    <!--1970-->
+    <section  class="year-section" id="1970">
+        <h2>1970 - Rabies Surveillance and Control Programs Expanded</h2>
+        <p>In the 1970s, rabies surveillance and control programs were significantly expanded globally. More countries began establishing national programs to reduce the prevalence of the disease.</p>
+        <ul>
+            <li>WHO began formal rabies surveillance programs to track cases globally.</li>
+            <li>Mass vaccination efforts were introduced in various countries to prevent the spread of rabies.</li>
+        </ul>
+    </section>
+
+    <!--1990-->
+    <section  class="year-section" id="1990">
+        <h2>1990 - Rabies Vaccine Improvements</h2>
+        <p>During the 1990s, rabies vaccines were significantly improved in terms of safety and efficacy. Shorter treatment regimens for post-exposure prophylaxis were developed, making rabies treatment more accessible.</p>
+        <ul>
+            <li>New, more effective rabies vaccines were developed with fewer side effects and faster treatment schedules.</li>
+            <li>Increased access to vaccines improved rabies prevention efforts globally.</li>
+        </ul>
+    </section>
+
+    <!--2024-->
+    <section class="year-section" id="2024">
+        <h2>2024 - Rabies Control and Elimination Efforts</h2>
+        <p>As of 2024, global efforts to eliminate rabies continue, with a focus on improving access to vaccines, surveillance, and increasing public awareness to prevent fatalities.</p>
+        <ul>
+            <li>Continued efforts to eliminate rabies worldwide with ongoing vaccination campaigns.</li>
+            <li>Advances in oral vaccines for wildlife are being used to reduce rabies transmission.</li>
+            <li>Increased focus on prevention in countries where rabies remains a major public health concern.</li>
+        </ul>
+    </section>
+
+</div>
+
+<!--footer section-->
+<div class="container1">
+    <span>
+     <input class="email" type="email" placeholder="Email Address">
+     <button type="submit" class="btn1">SUBSCRIBED</button>
+    </span>
+     <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+ </div>
+
+ <div class="container">
+     <div class="row">
+         <div class="col-md-2">
+             <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+             <p class="number">Tel: +251 11 551 77 </p>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Region Centres</p>
+             <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Viruses</p>
+             <a href="#">Chikungunya Virus</a><br>
+             <a href="#">Cholera Virus</a><br>
+             <a href="#">HIV Virus</a><br>
+             <a href="#">Covid-19 Virus</a><br>
+             <a href="#">Dengue Virus</a><br>
+             <a href="#">Ebola Virus</a><br>
+             <a href="#">Hepatisis C Virus</a>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">About</p>
+             <a href="#">Contact Us</a><br>
+             <a href="#">About Us</a><br>
+             <a href="#">Feedback</a><br>
+             <a href="#">Login</a><br>
+         </div>
+         <div class="col-md-2">
+             <p class="p3">Information</p>
+            <a href="#">Years Information</a><br>
+            <a href="#">Disease Information</a><br>
+            <a href="#">News Information</a><br>
+            </div>
+            <div class="col-md-2">
+                <p class="p3">Follow us</p>
+               <a href="#">Instagram</a><br>
+               <a href="#">Facebook</a><br>
+               <a href="#">Whatsapp</a><br>
+               <a href="#">Messenger</a><br>
+               <a href="#">Youtube</a><br>
+            </div>
+        </div>
+    </div>
+
+ <script>
+     $(document).ready(function(){
+         $('.btn1').click(function(event){
+             event.preventDefault();
+
+             let email = $('.email').val();
+
+             let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+             if(!emailregex.test(email)){
+                 alert('Enter a Valid Email Address.');
+                 return false;
+             }
+             alert('Your Email Successfully Submit');
+             return true;
+         });
+     });
+ </script>
+</body>
+</html>

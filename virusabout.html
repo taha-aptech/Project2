@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Viruses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+              header {
+    background: linear-gradient(to right,maroon,rgb(245, 245, 236), rgb(236, 236, 221),maroon);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1.2s ease-in-out;
+    }
+    @keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+header h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+nav .menu li a:hover {
+  background: linear-gradient(90deg, red,maroon);
+    transform: scale(1.1);
+    font-weight: bold;
+    color: #ccc;
+
+}
+
+
+button.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1{
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        background: #191919;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav .menu.show {
+        display: flex;
+    }
+
+    button.menu-toggle {
+        display: block; 
+    }
+}
+
+    .logo a img {
+    height: 80px; 
+    width: 200px;
+    }
+    
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+      #a1{
+        color:  #191919;
+        font-weight: bold;
+        gap: 7px;
+        text-decoration: dashed;
+        font-size: 20px;
+        text-decoration: bold;
+      }
+      .dropdown-menu{
+        background: linear-gradient(90deg,rgb(189, 53, 53),#861a11);
+        color: #191919;
+      }
+      .dropdown-item{
+        color: #fff;
+      }
+     
+        body {
+    background-color: #f4f7fa; /* Light background for better readability */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+h1, h2 {
+    color: #3c7ba5; /* Dark color for headings */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    text-shadow: #3f6084;
+}
+
+h1:hover {
+    color: #4f76a0; /* Change color on hover */
+    text-shadow: 2px 2px 3px black;
+}
+
+
+
+
+/* Card styles */
+.card {
+    border: 2px solid black; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 15px;
+    
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for card titles */
+    color: #1c1c1d; /* Blue color for card titles */
+    text-shadow: 1px 2px 3px black;
+}
+
+.card-text {
+    font-size: 1rem; /* Standard font size for card text */
+    color: #495057; /* Darker gray for card text */
+    border: none; /* Remove default card border */
+    border-radius: 6px; /* Rounded corners for cards */
+    box-shadow: 2px 3px 3px black;
+    transition:  transform 0.5s ease;
+    
+}
+.card-text:hover{
+    transform: translateY(20px);
+}
+
+
+
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.container1{
+            display: flex;
+            background-color: rgb(151, 23, 45);
+            padding: 15px;
+        }
+        .email{
+            margin-left: 50px;
+            width: 430px;
+            padding: 8px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: black;
+            border-color: transparent;
+        }
+        a{
+          font-size:15px ;
+          color: rgb(99, 98, 98);
+          text-decoration: none;
+        }
+        .para1{
+            margin-left: 300px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: goldenrod;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: rgb(148, 31, 31);
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   .container{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+  backdrop-filter: blur(62px);
+   }
+  
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+        <a id="logo" class="navbar-brand logo" href="#"><img src="WhatsApp_Image_2025-01-28_at_16.06.38_79ea369a-removebg-preview.png" alt=""></a>
+      </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul class="menu">
+              <div class="dropdown">
+                <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active" aria-current="page" href="virusabout.html">About us</a>
+                </button>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="virusabout.html">About us</a></li>
+                  <li><a class="dropdown-item" href="whatarevirus.html">What are Viruses?</a></li>
+                  <li><a class="dropdown-item" href="virusabout.html">How do Viruses Spread?</a></li>
+                </ul>
+              </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Disease Information </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="diseases.html">
+                        Disease</a></li>
+                  
+                      <li><a class="dropdown-item" href="diseases.html">NEWS</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Year wise listing  </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="covidyear.html">COVID-19 years</a></li>
+                      <li><a class="dropdown-item" href="hivyear.html">HIV years</a></li>
+                      <li><a class="dropdown-item" href="dengueyear.html">Dengue years</a></li>
+                      <li><a class="dropdown-item" href="chikungunayear.html">Chikungunya years</a></li>
+                      <li><a class="dropdown-item" href="hepaCyear.html">Hepatitis C years</a></li>
+                      <li><a class="dropdown-item" href="rabiesyear.html">
+                        Rabies years</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Contact us </a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact us</a></li></a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active" aria-current="page" href="#">Feed back</a>
+                    </button>
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Feed back</a></li>
+                    </ul>
+                  </div>
+            </ul>
+          </div>
+        </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">About Viruses</h1>
+        <p class="lead text-center mb-5"> <b>Understanding the world of viruses and their impact on health.</b></p>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">What are Viruses?</h2>
+                        <p class="card-text">Viruses are microscopic infectious agents that can only replicate inside the living cells of an organism. They are composed of genetic material (DNA or RNA) surrounded by a protein coat and, in some cases, a lipid envelope.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">How do Viruses Spread?</h2>
+                        <p class="card-text">Viruses can spread through various means, including direct contact, airborne transmission, and contaminated surfaces. Understanding these transmission methods is crucial for prevention and control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Impact on Health</h2>
+                        <p class="card-text">Viruses can cause a range of diseases, from mild illnesses like the common cold to severe diseases such as HIV/AIDS and COVID-19. Vaccination and hygiene practices are essential in controlling viral infections.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Prevention and Control</h2>
+                        <p class="card-text">Preventive measures include vaccination, hand hygiene, and avoiding close contact with infected individuals. Public health initiatives play a vital role in controlling outbreaks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Link to custom JavaScript -->
+
+    <script>
+        $(document).ready(function() {
+    // Add the 'visible' class to elements with the 'fade-in' class when the page loads
+    $('.fade-in').each(function() {
+        $(this).addClass('visible');
+    });
+});
+    </script>
+
+     <!--Footer Section-->
+<div class="container1">
+    <input class="email" type="email" placeholder="Email Address">
+    <button type="submit" class="btn1">SUBSCRIBED</button>
+   </span>
+    <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-2">
+        <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+        <p class="number">Tel: +251 11 551 77 </p>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Region Centres</p>
+        <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Viruses</p>
+        <a href="chikungunya.html">Chikungunya Virus</a><br>
+        <a href="cholera1.html">Cholera Virus</a><br>
+        <a href="hiv.html">HIV Virus</a><br>
+        <a href="covid19.html">Covid-19 Virus</a><br>
+        <a href="dengu.html">Dengue Virus</a><br>
+        <a href="ebola virus.html">Ebola Virus</a><br>
+        <a href="hepaC type.html">Hepatisis C Virus</a>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">About</p>
+        <a href="contat us.html">Contact Us</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="contat us.html">Feedback</a><br>
+        <a href="loginpage.html">Login</a><br>
+    </div>
+    <div class="col-md-2">
+        <p class="p3">Information</p>
+       <a href="Covid 19 year.html">Years Information</a><br>
+       <a href="diseases.html">Disease Information</a><br>
+       <a href="diseases.html">News Information</a><br>
+       </div>
+       <div class="col-md-2">
+           <p class="p3">Follow us</p>
+          <a href="https://www.facebook.com/">Facebook</a><br>
+          <a href="https://x.com/?lang=en">Twitter</a><br>
+          <a href="https://www.messenger.com/">Messenger</a><br>
+          <a href="https://www.youtube.com/">Youtube</a><br>
+       </div>
+   </div>
+  </div>
+  <script>
+         $(document).ready(function(){
+       $('.btn1').click(function(event){
+           event.preventDefault();
+  
+           let email = $('.email').val();
+  
+           let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+           if(!emailregex.test(email)){
+               alert('Enter a Valid Email Address.');
+               return false;
+           }
+           alert('Your Email Successfully Submit');
+           return true;
+       });
+   });
+  </script>
+  </div>
+</body>
+</html>

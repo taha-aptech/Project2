@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viruses</title>
+    <link rel="icon" href="logo-removebg-preview (1).png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url(image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+        }
+        #email{
+            border: none;
+            background-color:transparent;
+            padding: 5px;
+       
+        }
+        .one{
+            border: 1px solid ;
+            padding: 8px ;
+            width: 250px;
+            background-color: white;
+            font-size: 12px;
+
+        }
+        .one:hover{
+            border: none;
+        }
+        #password{
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+        }
+        .blue{
+            background-color: rgb(53, 114, 228);
+            border: none;
+            width: 120px;
+            padding: 8px;
+            color: white;
+        }
+        .blue:hover{
+            transform: scale(1.05);
+        }
+        .pink{
+            border: none;
+            width: 120px;
+            padding: 8px;
+            background-color: rgb(253, 85, 113);
+            color: white;
+        }
+        .pink:hover{
+            transform: scale(1.05);
+        }
+        .log{
+            width: 250px;
+            padding: 10px;
+            border: none;
+            background-color: rgb(60, 103, 245);
+            
+        }
+        .log:hover{
+            transform: scale(1.05);
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        #sign{
+            color: blue;
+        }
+        p{
+            color:white;
+        }
+        .container{
+            border: 1px solid;
+            width: 450px;
+            height: 500px;
+            box-shadow: 2px 2px 8px ;
+            backdrop-filter: blur(7px);
+            margin-left: 50px;
+            margin-top: 120px;
+        }
+        h1{
+            color:white;
+            margin-top:80px;
+        }
+        #icon1{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center><div class="container">
+        <h1>Login form</h1>
+        <div class="one">
+            <i class="fa-solid fa-user" id="icon1"></i>
+            <input type="text" name="" id="email" placeholder="Enter your email">
+        </div> <br>
+        <div class="one">
+            <i class="fa-solid fa-eye" id="icon1"></i>
+            <input type="text" name="" id="password" placeholder="Password">
+        </div> 
+        <a href="">Forgot Password?</a><br> <br>
+        <button class="log"><b>LOGIN </b></button>
+        <p>Or login with</p>
+        <a href="https://www.facebook.com/"><button class="blue" > <i class="fa-brands fa-facebook-f"></i> Facbook</button></a>
+        <a href="https://www.Instagram.com/"><button class="pink"> <i class="fa-brands fa-instagram"></i> Instagram</button></a>
+        <p>Don't have account?  <a href="" id="sign">Signup Now</a></p>
+        
+
+    </div>
+</center>
+       
+<script>
+     $(document).ready(function(){
+        $("#password").click(function(){
+            let passwordField = $("#password");
+            let icon = $('#icon1');
+
+            if(passwordField.attr("type") === "password"){
+                passwordField.attr("type" , "text");
+                icon.removeClass("fa-eye");
+                icon.addClass("fa-eye-slash");
+            } else{
+                passwordField.attr("type" , "password");
+                icon.removeClass("fa-eye-slash");
+                icon.addClass("fa-eye");
+            }
+        });
+     });
+     $(document).ready(function(){
+        $('.log').click(function(event){
+            event.preventDefault();
+
+            let email = $('#email').val();
+            let password = $('#password').val();
+
+            // Email validation regex
+            let emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+            if(!emailRegex.test(email))
+            { alert('Enter a valid Email Address.');
+                return false;
+            }
+
+            //Password validation form
+             let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@!#$%^&*_-])[a-zA-Z\d@!#$%^&*_-]{8}$/;
+             if(!passwordRegex.test(password)) {
+                alert ('Password must be atlest 8 characters long, include at least one lowercase letter, one uppercase letter, one digit and Special Letter.');
+                return false;
+            }
+            alert('Your form Submitted Successfully!');
+            return true;
+        });
+     });
+</script>
+</body>
+</html>

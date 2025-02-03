@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viruses</title>
+    <link rel="icon" href="WhatsApp_Image_2025-01-28_at_16.06.38_79ea369a-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      header {
+    background: linear-gradient(to right,maroon,rgb(245, 245, 236), rgb(236, 236, 221),maroon);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1.2s ease-in-out;
+    }
+    @keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+header h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+nav .menu li a:hover {
+  background: linear-gradient(90deg, red,maroon);
+    transform: scale(1.1);
+    font-weight: bold;
+    color: #ccc;
+
+}
+
+
+button.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1{
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        background: #191919;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav .menu.show {
+        display: flex;
+    }
+
+    button.menu-toggle {
+        display: block; 
+    }
+}
+
+    .logo a img {
+    height: 80px; 
+    width: 200px;
+    }
+    
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+      #a1{
+        color:  #191919;
+        font-weight: bold;
+        gap: 7px;
+        text-decoration: dashed;
+        font-size: 20px;
+        text-decoration: bold;
+      }
+      .dropdown-menu{
+        background: linear-gradient(90deg,rgb(189, 53, 53),#861a11);
+        color: #191919;
+      }
+      .dropdown-item{
+        color: #fff;
+      }
+     
+        #imgh1{
+          text-align: left;
+        }
+      .row1{
+    border: 1px solid ;
+   }
+    #img1{
+        width: 400px;
+        
+    }
+    #h1{
+        padding: px;
+    }
+    #caption1{
+       
+        margin-top: 60px;
+    }
+    #btn11{
+        width: 120px;
+        border: 2px solid;
+        border-radius: 5px;
+        
+    }
+    #HMPV{
+      text-align: center;
+      padding: 10px;
+    }
+    #typesofvirus{
+      text-align: center;
+      padding: 10px;
+      background: linear-gradient(90deg, #191919,#6b2023,#861a11);
+    }
+    #DiseaseInformation{
+      margin-top: 50px;
+      margin-left: 20px;
+      margin-right: 10px;
+      
+    }
+    #DiseaseInformation2{
+      padding: 17px;
+    }
+    #virusspreads{
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+    .container1{
+            display: flex;
+            background-color:rgb(151,23,45);
+            padding: 17px;
+        }
+        a{
+          text-decoration: none;
+          color: rgb(99,98,98);
+          font-size: 17px;
+        }
+        .email{
+            margin-left: 70px;
+            width: 430px;
+            padding: 13px;
+           box-shadow: 5px 6px 7px rgb(151, 23, 45);
+           border-color: transparent;
+        }
+        .btn1{
+            width: 140px;
+            padding: 13px;
+            margin-top: 12px;
+            color: white;
+            background-color: #191919;
+            border-color: transparent;
+        }
+        .para1{
+            margin-left: 200px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        i{
+            font-size: 30px;
+            padding: 5px;
+            color: white;
+            margin-top: 10px;
+        }
+        i:hover{
+            color: #6b2023;
+        }
+      .para2{
+        padding: 10px;
+        font-size: 19px;
+      }
+    .col-md-2{
+        padding: 19px;
+    }
+    .number{
+        color: linear-gradient(90deg, #191919,#6b2023,#861a11 );
+        font-weight: bold;
+        font-size: 16px;
+    }
+   .p4{
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+   }
+   .p2{
+    font-size: 17px;
+   }
+   .p3{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   .containerfooter{
+   background-image: url(https://www.shutterstock.com/image-illustration/macro-coronaviruscovid19-cell-omicron-variant-260nw-2083340710.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: fit-content;   
+   backdrop-filter: blur(62px);
+   }
+   .containerfinalimg {
+            position: relative;
+            width: 50%;
+   
+        }
+        .finalimg{
+            width: 1000%;
+            height: 200px;
+            margin-top: 1000px;
+
+        }
+        .textspan {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+            margin-bottom: 100px;
+            margin-right: 000px;
+            margin-left: 00px;
+        }
+        .textspan2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+            margin-bottom: 100px;
+            margin-right: 000px;
+            margin-left: 00px;
+        }
+        #imgp1{
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: 15px;
+            color:whitesmoke;
+        }
+        #imgh1{
+            font-size: 70px;
+        }
+        #span1{ 
+           color: #1E90FF;
+        }
+        #span2{
+           color:  #FFD700;;
+        }
+        #span3{ 
+           color: #6b2023;
+        }
+        #hmpvh11{
+          padding: 7px;
+          font-size: 60px;
+          text-shadow: 2px 2px 4px  rgb(119, 53, 53) ;
+        }
+        #hmpvp11{
+          padding: 18px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      .containerpopup {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(90deg, #191919,#6b2023,#861a11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    .boxtwo {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #ccc;
+    }
+    .boxtwo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .top, .bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      transition: transform 0.4s ease-in-out;
+    }
+    .bottom {
+      top: 50%;
+    }
+
+    .boxtwo:hover .top {
+      transform: translateY(-100%);
+    }
+
+    .boxtwo:hover .bottom {
+      transform: translateY(100%);
+    }
+
+    .boxtwo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.4s ease;
+    }
+
+    .popup {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    .boxtwo:hover .popup {
+      opacity: 1;
+    }
+
+    .popup img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+     #finalimg{
+         width: 1265px;
+         height: 800px;
+     }
+    .viruses{
+      border: 1px solid none;
+      margin-right: 800px;
+    }
+    .hmpvheading{
+      text-align: center;
+      width: 100%;
+      background: linear-gradient(90deg, #191919,#6b2023,#861a11 );
+      border: none;
+      height: 70px;
+      color: #f0f0f0;
+    }
+    #img12{
+      width: 450px;
+      height: 350px;
+     
+    }
+    .hmpvheading2{
+      text-align: center;
+      width: 100%;
+      background: linear-gradient(90deg, #191919,#6b2023,#861a11);
+      border: none;
+      height: 70px;
+      color: #f0f0f0;
+    
+    }
+    #img122{
+      width: 500px;
+      height: 300px;
+    }
+    #h122{
+      text-align: center;
+    }
+    .hmpvpara{
+      border: none;
+    }
+    .hmpvpara2{
+      text-align: center;
+      margin-bottom: px;
+      margin-top: px;
+      border: none;
+    }
+    #btn112{
+      align-items: center;
+    }
+    #caption12{
+       text-align: center;
+       margin-top: 60px;
+    }
+    .cards{
+    border: 2px solid gray none;
+    margin-top: 22px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3 ease;
+    border-radius: 22px;
+    gap: 50px;
+    box-shadow: 10px 5px 4px  rgb(119, 53, 53);
+}
+.cards:hover{
+    transform: translate(-9px);
+}
+#one1{
+width: 260px;
+
+}    
+#one{
+    width: 260px;
+}
+.containerxander{
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}     
+  
+#two2:hover{
+    box-shadow: 10px 5px 4px  rgb(119, 53, 53);
+}
+#seven{
+    font-size: 40px;
+    color: linear-gradient(90deg,#191919,#6b2023,#861a11 );
+    text-align: center;
+}
+#btn112{
+  width: 150px;
+  text-align: center;
+  background-color:#6b2023;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+#btn22{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.main{
+  border: none;
+ 
+}
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header>
+      <div class="logo">
+      <a id="logo" class="navbar-brand logo" href="#"><img src="WhatsApp_Image_2025-01-28_at_16.06.38_79ea369a-removebg-preview.png" alt=""></a>
+    </div>
+      <nav>
+          <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+          <ul class="menu">
+            <div class="dropdown">
+              <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link active" aria-current="page" href="virusabout.html">About us</a>
+              </button>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="virusabout.html">About us</a></li>
+                <li><a class="dropdown-item" href="whatarevirus.html">What are Viruses?</a></li>
+                
+              </ul>
+            </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Disease Information </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="diseases.html">
+                      Disease</a></li>
+                  
+                    <li><a class="dropdown-item" href="diseases.html">NEWS</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="#">Year wise listing  </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="chikungunayear.html">Chikungunya </a></li>
+                    <li><a class="dropdown-item" href="Cholera Year1.html">Cholera</a></li>
+                    <li><a class="dropdown-item" href="covidyear.html">Covid-19 </a></li>
+                    <li><a class="dropdown-item" href="hivyear.html">HIV </a></li>
+                    <li><a class="dropdown-item" href="dengueyear.html">Dengue </a></li>
+                    <li><a class="dropdown-item" href="hepaCyear.html">Hepatitis C</a></li>
+                    <li><a class="dropdown-item" href="rabiesyear.html">Rabies</a></li>
+              
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="contat us.html">Contact us </a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contat us.html">Contact us</a></li></a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button id="a1" class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active" aria-current="page" href="contat us.html">Feed back</a>
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contat us.html">Feed back</a></li>
+                  </ul>
+                </div>
+          </ul>
+        </div>
+      </div>
+          </ul>
+      </nav>
+  </header>
+      <div id="finalimg" class="containerfinalimg">
+        <img id="finalimg" src="https://www.brookings.edu/wp-content/uploads/2020/09/globeMask.jpg?quality=75&w=1500" alt="Image">
+        <div  class="textspan">
+          <div class="container viruses">
+          <h1 id="imgh1"><span id="span1">WHAT</span> <span id="span2">ARE</span><br><span id="span3">VIRUSES?</span></h1>
+          <P id="imgp1">Viruses are microscopic particles that are present in animals,  plants,<br> and other living organisms. They can sometimes cause diseases, such <br>as the flu and COVID-19. A virus may also affect one organism in one <br>way but a different one in another. This explains why a virus that  causes <br>illness in a cat may not affect a human. Viruses are the smallest obligate <br> intracellular parasites that require  living host cells  in order to multiply <br> and being alive.  Viruses can infect  any type  of cell, ranging from  human <br>cells to protozoa</P>
+        </div>
+        </div>
+          <div class="textspan2">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div id="HMPV">
+        <h1 id="hmpvh11">LATEST NEWS</h1>
+        <p id="hmpvp11">
+          Five years after the Covid-19 pandemic China is witnessing <br> an outbreak of the human metapneumovirus (HMPV). According to <br> reports and social media posts, hospitals are overcrowded with <br>infected individuals and crematories are overwhelmed. Some social media <br>users claim that multiple viruses, including influenza A, HMPV, <br> Mycoplasma pneumoniae and Covid-19, are circulating in China. <br> There are even claims that China has declared a state of emergency, <br> however, there's no official confirmation. HMPV causes flu-like <br> symptoms. The virus usually affects the upper respiratory system but <br> can sometimes cause lower respiratory infections. HMPV is more <br> common in winter and early spring.
+        </p>   
+      </div>
+      <section class="popupbox">
+        <div class="containerpopup">
+          <div class="boxtwo">
+            <div class="top">
+              <img src="https://wexnermedical.osu.edu/-/media/images/wexnermedical/blog/2021-stories/12/virus-mutations/virus-mutations_large.jpg" alt="Image 1">
+            </div>
+            <div class="bottom">
+              <img src="https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/newseventsimage_1588866311517_mainnews2012_x1.jpg" alt="Image 1">
+            </div>
+            <div class="popup">
+              <img src="https://newsroom.uvahealth.com/wp-content/uploads/2022/08/GettyCOVID.jpg" alt="Popup Image 1">
+            </div>
+          </div>
+          <div class="boxtwo">
+            <div class="top">
+              <img src="https://www.efsa.europa.eu/sites/default/files/news/coronavirus.jpg" alt="Image 2">
+            </div>
+            <div class="bottom">
+              <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2021-06/28/full/1624825324-5342.jpg?im=FeatureCrop,size=(826,465)" alt="Image 2">
+            </div>
+            <div class="popup">
+              <img src="https://ichef.bbci.co.uk/images/ic/480xn/p086b2cz.jpg" alt="Popup Image 2">
+            </div>
+          </div>
+          <div class="boxtwo">
+            <div class="top">
+              <img src="https://static.cepi.net/images/3840x2160/2024-02/shutterstock_1913443096.webp" alt="Image 3">
+            </div>
+            <div class="bottom">
+              <img src="https://www.datocms-assets.com/80792/1677671724-adobestock_318002637.jpeg?ar64=MTY6OQ&auto=format&fit=crop" alt="Image 3">
+            </div>
+            <div class="popup">
+              <img src="https://cdn.who.int/media/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-1200v.jpg?sfvrsn=217a6a68_42" alt="Popup Image 3">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+       <br>
+       <br>
+       <br>
+       <div class="container-fluid main">
+       <div class="container hmpvfinal">
+       <div class="container hmpvheading">
+        <h1>What is HMPV?</h1>
+       </div>
+     
+    <div class="container hmpvpara"> 
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <img id="img12" src="https://today.duke.edu/sites/default/files/legacy-files/GIF1200x630.gif" alt="">
+            </div>
+            <div id="caption1" class="col-md-6">
+                <h1 id="h1">What is HMPV and how does it spread?</h1>
+                <p>A surge in cases of the flu-like human metapneumovirus (HMPV) in China has raised fears of another Covid-style pandemic.HMPV is similar to a virus that is better known in the United States — respiratory syncytial virus, or R.S.V. It causes symptoms much like those associated with flu and Covid, including cough, fever, nasal congestion and wheezing...</p>
+                <button id="btn112"><a id="btn22" href="hmpvinfo.html">Read More</a></button>
+            </div>
+        </div>
+      </div> 
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid main">
+    <div class="container hmpvheading2">
+      <h1 id="h1">Are viruses alive?</h1>
+     </div>
+    <div class="container hmpvpara2"> 
+      <div class="row row1">
+           <div id="caption12" class="col-md-6 ">
+              <h1 id="h122" class="hmpvpara2">Are viruses alive?</h1>
+              <p class="hmpvpara2">However, viruses have genetic information coded in DNA or RNA,<br> a characteristic shared by every other living thing. <br> So does that mean they can be considered ‘alive’? <br> Let’s take a look at what biologists mean by ‘alive’....</p>
+              <button class="hmpvpara2" id="btn112"><a id="btn22" href="whatarevirus.html">Reed More</a></button>
+            </div>
+          <div id="" class="col-md-6">
+            <img id="img122" src="https://institute.careerguide.com/wp-content/uploads/2020/09/COVID-19-Achilles-Heel.gif" alt="">
+          </div>
+      </div> 
+  </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="containerxander">
+      <div class="cards">
+          <img src="https://katu.com/resources/media/ccd5f5e2-7edb-4c99-ab24-0f615573b950-full3x4_200509_komo_covid_coronavirus_harborview_hospital_13.jpg?1603918450405" alt="" id="one">
+      </div>
+      <div class="cards" id="two2">
+        <h1 id="seven" >VIRUL </h1>
+        <h5>What Do Doctors Mean When They Say ‘Viral’?</h5>
+        <p>
+          When a doctor says, for instance, “you have a viral cough,”they are referring to the root cause of your symptoms.In this context, ‘viral’ means that your cough or other symptoms are caused by a virus, rather than bacteria, fungi, or other pathogens.Viruses are microscopic organisms that invade cells in your body and use those cells to reproduce.
+        </p>
+      </div>
+      <div class="cards">
+          <img src="https://www.tennessean.com/gcdn/presto/2020/03/26/PNAS/04596dc6-ebdd-45a5-a012-c00dce4bf1a1-NAS-Coronavirus-heroes-0326-002.jpg?crop=1743,2323,x1128,y0" alt="" id="one1">
+         
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+     <footer> 
+      <div class="container1">
+        <span>
+         <input class="email" type="email" placeholder="Email Address">
+         <button type="submit" class="btn1">SUBSCRIBED</button>
+        </span>
+         <p class="para1">Follow us  <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></p>
+     </div>
+    
+     <div class="container">
+         <div class="row">
+             <div class="col-md-2">
+                 <p class="p2">A virus is a tiny infectious agent that  can only replicate inside the cells of a  living host. It consists of genetic  material (DNA or RNA) surrounded by a protein coat and sometimes a lipid envelope.  Viruses can infect animals</p>
+                 <p class="number">Tel: +251 11 551 77 </p>
+             </div>
+             <div class="col-md-2">
+                 <p class="p3">Region Centres</p>
+                 <p class="p4">Central Africa RCC <br>Eastern Africa RCC <br> Northern Africa RCC<br> Western Africa RCC<br> Southern Africa RCC</p>
+             </div>
+             <div class="col-md-2">
+                 <p class="p3">Viruses</p>
+                 <a href="chikungunya.html">Chikungunya Virus</a><br>
+                 <a href="cholera1.html">Cholera Virus</a><br>
+                 <a href="hiv.html">HIV Virus</a><br>
+                 <a href="covid19.html">Covid-19 Virus</a><br>
+                 <a href="dengu.html">Dengue Virus</a><br>
+                 <a href="ebola virus.html">Ebola Virus</a><br>
+                 <a href="hepaC type.html">Hepatisis C Virus</a>
+             </div>
+             <div class="col-md-2">
+                 <p class="p3">About</p>
+                 <a href="contat us.html">Contact Us</a><br>
+                 <a href="about us.html">About Us</a><br>
+                 <a href="contat us.html">Feedback</a><br>
+                 <a href="loginpage.html">Login</a><br>
+             </div>
+             <div class="col-md-2">
+                 <p class="p3">Information</p>
+                <a href="Covid 19 year.html">Years Information</a><br>
+                <a href="diseases.html">Disease Information</a><br>
+                <a href="diseases.html">News Information</a><br>
+                </div>
+                <div class="col-md-2">
+                    <p class="p3">Follow us</p>
+                   <a href="https://www.facebook.com/">Facebook</a><br>
+                   <a href="https://x.com/?lang=en">Twitter</a><br>
+                   <a href="https://www.messenger.com/">Messenger</a><br>
+                   <a href="https://www.youtube.com/">Youtube</a><br>
+                </div>
+            </div>
+        </div>
+  </footer>
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(event){
+                event.preventDefault();
+
+                let email = $('.email').val();
+
+                let emailregex = /[A-Za-z0-9]+@[a-z]+\.[a-z]{3,}/;
+                if(!emailregex.test(email)){
+                    alert('Enter a Valid Email Address.');
+                    return false;
+                }
+                alert('Your Email Successfully Submit');
+                return true;
+            });
+        });
+    </script>
+</body>
+</html>
